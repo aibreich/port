@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Macro Track — Project · Aiden Eichenour</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="shared.css" />
+<style>
+  .cs-step-list { list-style: none; display: flex; flex-direction: column; gap: 16px; margin: 24px 0; }
+  .cs-step-list li { display: flex; align-items: flex-start; gap: 16px; font-size: 16px; color: var(--muted); line-height: 1.65; }
+  .cs-step-list li::before { content: attr(data-n); font-family: var(--font-display); font-weight: 800; font-size: 13px; color: var(--accent); background: rgba(91,140,255,0.1); border: 1px solid rgba(91,140,255,0.2); border-radius: 6px; padding: 3px 10px; margin-top: 1px; flex-shrink: 0; }
+  .cs-step-list li strong { color: var(--text); }
+
+  .cs-github-link {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--surface2); border: 1px solid var(--border);
+    border-radius: 12px; padding: 16px 24px;
+    text-decoration: none; color: var(--text);
+    font-size: 15px; font-weight: 500;
+    transition: border-color 0.2s, transform 0.2s;
+    margin-top: 16px;
+  }
+  .cs-github-link:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .cs-github-link svg { color: var(--accent); flex-shrink: 0; }
+  .cs-github-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 2px; }
+</style>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav>
+  <a href="index.html" class="nav-logo">AE.</a>
+  <ul class="nav-links">
+    <li><a href="index.html#projects">Work</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#process">Process</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Let's Talk</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<div class="cs-hero">
+  <div class="cs-hero-bg"></div>
+  <div class="cs-hero-blob" style="background: radial-gradient(ellipse at center, rgba(255,107,107,0.15) 0%, transparent 68%);"></div>
+  <div class="cs-hero-content">
+    <a href="index.html" class="cs-back">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Back to Work
+    </a>
+    <p class="cs-eyebrow">Personal Project · Web App · Nutrition Tracking</p>
+    <h1 class="cs-title">Macro Track</h1>
+    <p class="cs-subtitle">A personal project built to sharpen front-end skills and explore functionality-driven design — helping users effortlessly track their daily food intake with a clean, distraction-free interface.</p>
+    <div class="cs-meta-row">
+      <div class="cs-meta-item"><span class="cs-meta-label">Type</span><span class="cs-meta-value">Personal Project</span></div>
+      <div class="cs-meta-item"><span class="cs-meta-label">Role</span><span class="cs-meta-value">Designer & Developer</span></div>
+      <div class="cs-meta-item"><span class="cs-meta-label">Stack</span><span class="cs-meta-value">HTML · CSS · JS · Firebase</span></div>
+      <div class="cs-meta-item"><span class="cs-meta-label">Status</span><span class="cs-meta-value">On Hold — Planned Overhaul</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- Hero image -->
+<div style="background:var(--surface); border-bottom:1px solid var(--border);">
+  <div style="max-width:1100px; margin:0 auto; padding:0 64px;">
+    <img
+      src="https://framerusercontent.com/images/JgrNovgMtEjLTj9FS031T5eAk9U.png"
+      alt="Macro Track web app"
+      style="width:100%; display:block; border-radius:0 0 20px 20px; border:1px solid var(--border); border-top:none;"
+    />
+  </div>
+</div>
+
+<!-- Body -->
+<div class="cs-body">
+
+  <!-- Overview -->
+  <div class="cs-section reveal">
+    <p class="cs-section-label">Overview</p>
+    <h2 class="cs-section-title">A simpler alternative to bloated nutrition apps.</h2>
+    <p class="cs-text">MacroTrack is a personal web app I built to improve my skills in dynamic content loading and data persistence with Firebase. The goal was to create a clean, focused interface for tracking daily food intake — a simpler alternative to competitors that overwhelm users with features most people never use.</p>
+    <p class="cs-text">While the app is currently on hold, I plan to revisit and overhaul it to reach its full potential — applying the UX knowledge I've built since the original build.</p>
+  </div>
+
+  <hr class="cs-divider" />
+
+  <!-- Technical challenges -->
+  <div class="cs-section reveal">
+    <p class="cs-section-label">What I Built & Learned</p>
+    <h2 class="cs-section-title">Bridging design and real technical constraints.</h2>
+    <p class="cs-text">MacroTrack was as much a technical education as a design project. Building it solo meant I had to understand every layer — from the UI through to the data layer — which gave me a much clearer mental model of what's actually easy and hard to build in production.</p>
+
+    <div class="cs-two-col">
+      <div class="cs-card">
+        <div class="cs-card-icon">🔥</div>
+        <h3 class="cs-card-title">Firebase Integration</h3>
+        <p class="cs-card-text">Built real-time data saving and retrieval for daily food logs using Firebase — handling previous-day data, persistence across sessions, and live updates without page reloads.</p>
+      </div>
+      <div class="cs-card">
+        <div class="cs-card-icon">⚡</div>
+        <h3 class="cs-card-title">Dynamic Content Loading</h3>
+        <p class="cs-card-text">One of the core technical challenges was dynamically loading food entries and ensuring interactive elements (edit, delete, update) correctly bound to those dynamic nodes — a common source of JS bugs.</p>
+      </div>
+      <div class="cs-card">
+        <div class="cs-card-icon">🛡️</div>
+        <h3 class="cs-card-title">Safer Dev Environment</h3>
+        <p class="cs-card-text">Used a compiler setup to catch errors before pushing updates — learning to treat deployment as a distinct phase from development, not something to do casually.</p>
+      </div>
+      <div class="cs-card">
+        <div class="cs-card-icon">🎨</div>
+        <h3 class="cs-card-title">Functionality-First Design</h3>
+        <p class="cs-card-text">Since this was a solo personal project, design decisions prioritized reliability and clarity over visual polish — a deliberate tradeoff that kept scope manageable.</p>
+      </div>
+    </div>
+
+    <img
+      src="https://framerusercontent.com/images/nHgR2bp4kWGHTP0q354SafTN6w.png"
+      alt="Macro Track app interface"
+      class="cs-img"
+    />
+    <p class="cs-img-caption">MacroTrack UI — simple, focused food logging interface</p>
+  </div>
+
+  <hr class="cs-divider" />
+
+  <!-- What's next -->
+  <div class="cs-section reveal">
+    <p class="cs-section-label">What's Next</p>
+    <h2 class="cs-section-title">A planned overhaul with a stronger UX foundation.</h2>
+    <p class="cs-text">When I originally built MacroTrack, my UX skills were still developing. Since then — through coursework at Indiana University's HCI program and projects like Mindful — I've developed a much clearer methodology for research-driven design decisions.</p>
+    <p class="cs-text">The planned overhaul will apply proper user research, IA work, and usability testing to what started as a coding exercise. The technical foundation is solid; the opportunity is to build a UX layer that makes it genuinely useful, not just functional.</p>
+    <ul class="cs-step-list">
+      <li data-n="01"><span><strong>User interviews</strong> — understand what daily nutrition tracking actually looks like in people's lives, not just what features a tracker "should" have.</span></li>
+      <li data-n="02"><span><strong>IA restructure</strong> — rethink the information hierarchy around how users think about food, not how nutritional databases organize it.</span></li>
+      <li data-n="03"><span><strong>Interaction design pass</strong> — reduce logging friction to the minimum viable interaction, informed by testing rather than assumptions.</span></li>
+    </ul>
+  </div>
+
+  <hr class="cs-divider" />
+
+  <!-- GitHub -->
+  <div class="cs-section reveal">
+    <p class="cs-section-label">Explore the Code</p>
+    <h2 class="cs-section-title">Open source and available on GitHub.</h2>
+    <p class="cs-text">The full codebase is available to explore. It's a useful reference for seeing how Firebase real-time database integration works alongside dynamic DOM manipulation in vanilla JavaScript.</p>
+    <a href="https://github.com/aibreich/macroTrack" target="_blank" rel="noopener" class="cs-github-link">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+      <div>
+        <span class="cs-github-label">View Repository</span>
+        github.com/aibreich/macroTrack
+      </div>
+    </a>
+    <div class="cs-tags" style="margin-top:40px;">
+      <span class="process-tag">HTML / CSS / JS</span>
+      <span class="process-tag">Firebase</span>
+      <span class="process-tag">Dynamic Content</span>
+      <span class="process-tag">UI Design</span>
+      <span class="process-tag">Solo Project</span>
+    </div>
+  </div>
+
+</div>
+
+<!-- Next project -->
+<div class="cs-next">
+  <div>
+    <p class="cs-next-label">Next Project</p>
+    <h2 class="cs-next-title">Child Life Zone →</h2>
+  </div>
+  <a href="childlifezone.html" class="cs-next-link">
+    View Project
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+</div>
+
+<footer>
+  <div class="footer-logo">AE.</div>
+  <p class="footer-copy">© 2025 Aiden Eichenour. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="index.html#projects">Work</a>
+    <a href="https://www.behance.net/gallery/240278629/Lumen-Planner-A-smart-weekly-medicine-organizer" target="_blank">Behance</a>
+    <a href="mailto:aibreich@iu.edu">Email</a>
+  </div>
+</footer>
+
+<script src="shared.js"></script>
+</body>
+</html>
